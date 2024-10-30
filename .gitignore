@@ -40,6 +40,8 @@ build/Release
 
 # Dependency directories
 frontend/node_modules
+backend/.env
+frontend/.env
 backend/node_modules
 node_modules/
 jspm_packages/

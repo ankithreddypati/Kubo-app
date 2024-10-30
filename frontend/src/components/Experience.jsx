@@ -1,3 +1,5 @@
+//frontend/src/components/Experience.jsx
+
 import {
   CameraControls,
   ContactShadows,
