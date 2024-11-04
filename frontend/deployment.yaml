@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vite-frontend
+  labels:
+    app: vite-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vite-frontend
+  template:
+    metadata:
+      labels:
+        app: vite-frontend
+    spec:
+      containers:
+      - name: vite-frontend
+        image: image-registry.openshift-image-registry.svc:5000/ankithreddy137-dev/vite-frontend:latest
+        ports:
+        - containerPort: 8080
+        env:
+        - name: VITE_BACKEND_URL
+          value: "https://kubocodeserver-ankithreddy137-dev.apps.cluster.intel.sandbox1234.opentlc.com/codeserver/proxy/3000/"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vite-frontend-service
+spec:
+  selector:
+    app: vite-frontend
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: vite-frontend-route
+spec:
+  to:
+    kind: Service
+    name: vite-frontend-service
+  port:
+    targetPort: 8080
+  tls:
+    termination: edge

@@ -37,12 +37,12 @@ export const UI = ({ hidden, ...props }) => {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 bottom-0 z-10 flex justify-between p-4 flex-col pointer-events-none">
-        <div className="self-start backdrop-blur-md bg-white bg-opacity-50 p-4 rounded-lg">
+        {/* <div className="self-start backdrop-blur-md bg-white bg-opacity-50 p-4 rounded-lg">
           <div className="flex items-center gap-2">
             <div className={`w-2 h-2 rounded-full ${isConnected ? 'bg-green-500' : 'bg-red-500'}`} />
             <span className="text-sm">{isConnected ? 'Connected' : 'Disconnected'}</span>
           </div>
-        </div>
+        </div> */}
         
         <div className="w-full flex items-center gap-2 pointer-events-auto max-w-screen-sm mx-auto">
           <input
