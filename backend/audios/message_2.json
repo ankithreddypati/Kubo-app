@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "duration": 2.84,
+    "soundFile": "/tmp/message_2.wav"
+  },
+  "mouthCues": [
+    {
+      "end": 0.14,
+      "start": 0,
+      "value": "X"
+    },
+    {
+      "end": 0.8,
+      "start": 0.14,
+      "value": "B"
+    },
+    {
+      "end": 0.86,
+      "start": 0.8,
+      "value": "C"
+    },
+    {
+      "end": 1.38,
+      "start": 0.86,
+      "value": "B"
+    },
+    {
+      "end": 1.42,
+      "start": 1.38,
+      "value": "C"
+    },
+    {
+      "end": 1.44,
+      "start": 1.42,
+      "value": "B"
+    },
+    {
+      "end": 1.64,
+      "start": 1.44,
+      "value": "C"
+    },
+    {
+      "end": 1.66,
+      "start": 1.64,
+      "value": "H"
+    },
+    {
+      "end": 1.68,
+      "start": 1.66,
+      "value": "A"
+    },
+    {
+      "end": 1.74,
+      "start": 1.68,
+      "value": "H"
+    },
+    {
+      "end": 1.76,
+      "start": 1.74,
+      "value": "B"
+    },
+    {
+      "end": 1.84,
+      "start": 1.76,
+      "value": "C"
+    },
+    {
+      "end": 1.86,
+      "start": 1.84,
+      "value": "B"
+    },
+    {
+      "end": 1.9,
+      "start": 1.86,
+      "value": "C"
+    },
+    {
+      "end": 2.06,
+      "start": 1.9,
+      "value": "B"
+    },
+    {
+      "end": 2.12,
+      "start": 2.06,
+      "value": "C"
+    },
+    {
+      "end": 2.22,
+      "start": 2.12,
+      "value": "B"
+    },
+    {
+      "end": 2.28,
+      "start": 2.22,
+      "value": "C"
+    },
+    {
+      "end": 2.32,
+      "start": 2.28,
+      "value": "B"
+    },
+    {
+      "end": 2.36,
+      "start": 2.32,
+      "value": "C"
+    },
+    {
+      "end": 2.6,
+      "start": 2.36,
+      "value": "B"
+    },
+    {
+      "end": 2.84,
+      "start": 2.6,
+      "value": "X"
+    }
+  ]
+}

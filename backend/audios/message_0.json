@@ -1,67 +1,117 @@
 {
   "metadata": {
-    "duration": 1.76,
+    "duration": 2.9,
     "soundFile": "/tmp/message_0.wav"
   },
   "mouthCues": [
     {
-      "end": 0.1,
+      "end": 0.16,
       "start": 0,
       "value": "X"
     },
     {
-      "end": 0.18,
-      "start": 0.1,
+      "end": 0.24,
+      "start": 0.16,
+      "value": "B"
+    },
+    {
+      "end": 0.26,
+      "start": 0.24,
       "value": "C"
     },
     {
-      "end": 0.36,
-      "start": 0.18,
+      "end": 0.42,
+      "start": 0.26,
       "value": "B"
     },
     {
       "end": 0.46,
-      "start": 0.36,
+      "start": 0.42,
+      "value": "C"
+    },
+    {
+      "end": 0.58,
+      "start": 0.46,
+      "value": "B"
+    },
+    {
+      "end": 0.7,
+      "start": 0.58,
+      "value": "C"
+    },
+    {
+      "end": 0.86,
+      "start": 0.7,
+      "value": "B"
+    },
+    {
+      "end": 0.88,
+      "start": 0.86,
+      "value": "F"
+    },
+    {
+      "end": 1.02,
+      "start": 0.88,
+      "value": "B"
+    },
+    {
+      "end": 1.08,
+      "start": 1.02,
+      "value": "F"
+    },
+    {
+      "end": 1.1,
+      "start": 1.08,
+      "value": "E"
+    },
+    {
+      "end": 1.18,
+      "start": 1.1,
       "value": "A"
     },
     {
-      "end": 0.54,
-      "start": 0.46,
-      "value": "D"
-    },
-    {
-      "end": 0.6,
-      "start": 0.54,
-      "value": "C"
-    },
-    {
-      "end": 0.64,
-      "start": 0.6,
+      "end": 1.2,
+      "start": 1.18,
       "value": "H"
     },
     {
-      "end": 0.76,
-      "start": 0.64,
+      "end": 1.38,
+      "start": 1.2,
       "value": "C"
     },
     {
-      "end": 1.28,
-      "start": 0.76,
+      "end": 1.54,
+      "start": 1.38,
       "value": "B"
     },
     {
-      "end": 1.36,
-      "start": 1.28,
+      "end": 1.56,
+      "start": 1.54,
       "value": "C"
     },
     {
-      "end": 1.48,
-      "start": 1.36,
+      "end": 1.62,
+      "start": 1.56,
+      "value": "E"
+    },
+    {
+      "end": 1.64,
+      "start": 1.62,
+      "value": "H"
+    },
+    {
+      "end": 1.74,
+      "start": 1.64,
+      "value": "C"
+    },
+    {
+      "end": 2.54,
+      "start": 1.74,
       "value": "B"
     },
     {
-      "end": 1.76,
-      "start": 1.48,
+      "end": 2.9,
+      "start": 2.54,
       "value": "X"
     }
   ]
