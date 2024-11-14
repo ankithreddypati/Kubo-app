@@ -1,0 +1,73 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: lipsync-model-storage
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi  
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lipsync-model
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lipsync-model
+  template:
+    metadata:
+      labels:
+        app: lipsync-model
+    spec:
+      containers:
+      - name: lipsync-model
+        image: lipsync-model:latest
+        ports:
+        - containerPort: 8000
+        volumeMounts:
+        - name: model-storage
+          mountPath: /app/model
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "1Gi"
+          limits:
+            cpu: "2"
+            memory: "4Gi"
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 10
+          periodSeconds: 5
+      volumes:
+      - name: model-storage
+        persistentVolumeClaim:
+          claimName: lipsync-model-storage
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: lipsync-model
+spec:
+  selector:
+    app: lipsync-model
+  ports:
+  - port: 8000
+    targetPort: 8000
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: lipsync-model
+spec:
+  to:
+    kind: Service
+    name: lipsync-model
+  port:
+    targetPort: 8000

@@ -1,0 +1,7 @@
+fastapi==0.68.1
+uvicorn==0.15.0
+python-multipart==0.0.5
+openvino==2023.1.0
+librosa==0.9.1
+numpy>=1.19.5
+soundfile==0.10.3.post1
